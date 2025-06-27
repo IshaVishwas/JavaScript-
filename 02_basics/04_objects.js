@@ -62,8 +62,27 @@ console.log(tinderUser.hasOwnProperty("Sammy")) // false
 console.log(tinderUser.hasOwnProperty("isLogged")) // false 
 
 
+/* ********** object destructuring *********** */
 
+const course = {
+    coursename: "js full",
+    price: "999",
+    courseInstructor: "isha"
+}
 
+// course.courseIntructor
+
+const {courseInstructor} = course // destructor
+// const {courseInstructor: istructor} = course //now if print then write instructor like console.log(instructor) //o/p will be isha 
+
+console.log(courseInstructor) // isha .... no need to write course.courseIntructor everytime
+
+//JSON .. KEYS AND VALUES BOTH ARE STRING 
+// {
+//     name: "isha"
+//     coursename: "js"
+//     price: "free"
+// }
 
 
 
